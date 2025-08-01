@@ -1,4 +1,7 @@
 package org.example.springbasicmemo.repository;
 
-public interface MemoRepository {
+import org.example.springbasicmemo.entity.Memo;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface MemoRepository extends JpaRepository<Memo, Long> {
 }
